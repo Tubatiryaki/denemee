@@ -20,18 +20,20 @@ public class C05_Exception {
 
             try {
                 sayi = scan.nextInt();
+                toplam+=sayi;
             } catch (InputMismatchException e) {
+                String hataliGiris=scan.next();
+                if (hataliGiris.equalsIgnoreCase("q")){
 
+                    break;
+                }else{
+                    System.out.println("hatali giris");
+                }
 
             }
 
-
-
-
-
-
-            toplam+=sayi;
         }while (toplam<500);
+        System.out.println("girdiginiz sayilarin toplami : " + toplam);
     }
 
 
