@@ -16,7 +16,7 @@ public class Q01_UseContinue {
             if (ifade.charAt(i) == 'a'  ||  ifade.charAt(i) == ' ') //ifade de a yada bosluk icerirse
                 continue;   // bu satir calistiginda dongunun basina gider,
                             // cunku a veya bosluk var iken herhangi bir ciktisini istemiyor
-                            // break aklilniza gelebilir.. ancak break kodu tamamen kirar ve devam etmez..
+                            // break akliniza gelebilir.. ancak break kodu tamamen kirar ve devam etmez..
             System.out.println(ifade.charAt(i));
         }
     }

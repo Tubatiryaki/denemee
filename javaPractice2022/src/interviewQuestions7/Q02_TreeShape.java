@@ -31,7 +31,7 @@ public class Q02_TreeShape {
             System.out.println(yaz);
         }
 
-        for (int i = 0; i <5;i++) //govde sabit sayi oldugundan kendimiz  i <5 kimini yazdik
+        for (int i = 0; i <5;i++) //govde sabit sayi oldugundan kendimiz  i <5 kismini yazdik
             System.out.println("|||");
 
     }
