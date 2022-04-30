@@ -19,7 +19,7 @@ public class Q02_MapKeySet {
         zipcodeAndCities.put(80001, "Colorado");
 
         Set<Integer> keys = zipcodeAndCities.keySet();
-
+        //Not : get(key); istenen key degeri Map'de varsa o key'e ait value'yu, map'de yoksa null doner.
         for (Integer key: keys
              ) {
             System.out.println(key + "=>" + zipcodeAndCities.get(key));
