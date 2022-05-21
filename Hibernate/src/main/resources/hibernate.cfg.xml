@@ -16,7 +16,7 @@
          <!-- create-drop: uygulama run edildiğinde tablolar oluşur, uygulama kapatıldığında tablolar silinir -->
          <!-- validate: veritabanında bir değişiklik yapmaz şemanın validate mi diye kontrol eder -->
          <!-- update: sınıflarda yapılan değişikliğe göre tabloları update eder -->    
-        <property name="hbm2ddl.auto">create</property>
+        <property name="hbm2ddl.auto">update</property>
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
    
