@@ -22,6 +22,8 @@ public class RunnerSave02 {
 		student1.setCourses(courses);
 		
 		
+		
+		
 		Configuration con= new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Student02.class);
 		SessionFactory sf=con.buildSessionFactory();
 		Session session=sf.openSession();
