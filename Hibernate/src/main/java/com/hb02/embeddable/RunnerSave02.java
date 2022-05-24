@@ -12,7 +12,7 @@ public class RunnerSave02 {
 	public static void main(String[] args) {
 		
 		Course02 courses=new Course02();
-		courses.setElective("Müzik,Resim,Almanca");
+		courses.setElective("MÃ¼zik,Resim,Almanca");
 		courses.setMandatory("Matematik,Fizik");
 		
 		Student02 student1=new Student02();
@@ -29,7 +29,7 @@ public class RunnerSave02 {
 		Session session=sf.openSession();
 		
 		Transaction tx=session.beginTransaction();
-		//Tabloya insert edeceðiz
+		//Tabloya insert edeceÄŸiz
 		session.save(student1);
 			
 		tx.commit();

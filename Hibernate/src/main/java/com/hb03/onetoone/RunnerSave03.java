@@ -34,16 +34,16 @@ public class RunnerSave03 {
 		
 		Configuration con=new Configuration();
 		con.configure("hibernate.cfg.xml");
-		//hibernate.cfg.xml içinde mapping class ile eklenmişsea şağıdaki satıra ihtiyaç yok.
-		//ikisinden biri kullanılabilir.
-		//con.addAnnotatedClass(Student03.class).addAnnotatedClass(Diary.class);
+		//hibernate.cfg.xml iÃ§inde mapping class ile eklenmiÅŸse aÅŸaÄŸÄ±daki satÄ±ra ihtiyaÃ§ yok.
+		//ikisinden biri kullanÄ±labilir.
+		con.addAnnotatedClass(Student03.class).addAnnotatedClass(Diary.class);
 		
 		SessionFactory sf=con.buildSessionFactory();
 		Session session=sf.openSession();
 		
 		Transaction tx=session.beginTransaction();
 		
-		//Kaydetmek istedğim objeler burada kaydedilecek.
+		//Kaydetmek istediÄŸim objeler burada kaydedilecek.
 		
 		session.save(diary1);
 		session.save(diary2);

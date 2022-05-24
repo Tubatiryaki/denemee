@@ -5,24 +5,24 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-//Veritabanında bir tablo karşılığı olduğunu gösterir.
-//Entity annotation içine name ile bir isim verirseniz 
-//tablo isminiz ve sorgularda kullanacağınız entity ismi bu verilen isim olacaktır.
+//VeritabanÄ±nda bir tablo karÅŸÄ±lÄ±ÄŸÄ± olduÄŸunu gÃ¶sterir.
+//Entity annotation iÃ§ine name ile bir isim verirseniz 
+//tablo isminiz ve sorgularda kullanacaÄŸÄ±mÄ±z entity ismi bu verilen isim(student01) olacaktÄ±r.
 //@Entity(name="student01")
 @Entity
-//Table annotation içinde name propertyisi oluşacak tablonun ismini belirler.
+//Table annotation iÃ§inde name propertyisi oluÅŸacak tablonun ismini belirler.
 //@Table(name="tbl_student01")
 public class Student01 {
 
-	//@Id annotation altındaki değişkenin  primary key yapar.
-	//Bu annotasyon her Entity sınıfında olmalı  
+	//@Id annotation altÄ±ndaki deÄŸiÅŸkeni  primary key yapar.
+	//Bu annotasyon her Entity sÄ±nÄ±fÄ±nda olmalÄ±  
 	@Id
 	private int id;
 	
 	
 	/*
-	 * Eğer tablodaki kolon ismini değişken isminden farklı bir isim olarak
-	 * oluşturmak istersek @Column(name="student_name") bu şekilde kullanabiliriz.
+	 * EÄŸer tablodaki kolon ismini deÄŸiÅŸken isminden farklÄ± bir isim olarak
+	 * oluÅŸturmak istersek @Column(name="student_name") bu ÅŸekilde kullanabiliriz.
 	 */
 	
 	@Column

@@ -11,12 +11,12 @@ public class Student03 {
 	@Id
 	private int id;
 
-	// @Column annotasyonu mecburi değildir. Fakat custom bir kolon ismi vermek
+	// @Column annotasyonu mecburi deÄŸildir. Fakat custom bir kolon ismi vermek
 	// istenirse o zaman mecburidir.
 	@Column(name = "std_name")
 	private String name;
 
-	// @Transient annotationu koyduğumuz değişken tabloda bir kolon olarak oluşmaz.
+	// @Transient annotationu koyduÄŸumuz deÄŸiÅŸken tabloda bir kolon olarak oluÅŸmaz.
 	//@Transient
 	private int grade;
 

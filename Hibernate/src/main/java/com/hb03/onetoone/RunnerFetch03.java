@@ -80,9 +80,7 @@ public class RunnerFetch03 {
 			System.out.println(result.getStudentName()+":"+result.getDiaryName()+":"+result.getStudentGrade());
 		}
 		
-		
-		
-		
+
 		tx.commit();
 		
 		session.close();

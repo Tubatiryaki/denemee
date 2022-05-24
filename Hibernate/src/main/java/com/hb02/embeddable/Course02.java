@@ -3,9 +3,9 @@ package com.hb02.embeddable;
 import javax.persistence.Embeddable;
 
 
-//@Embeddable annotationı ile bu annotationın sahip olduğu instance variableları
-//ek bir tablo oluşturmadan başka bir tabloya koymaya yarar. 
-//Gömülebilir.
+//@Embeddable annotationÄ± ile bu annotationÄ±n sahip olduÄŸu instance variablelarÄ±
+//ek bir tablo oluÅŸturmadan baÅŸka bir tabloya koymaya yarar. 
+//GÃ¶mÃ¼lebilir.
 @Embeddable
 public class Course02 {
 

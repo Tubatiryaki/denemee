@@ -7,15 +7,15 @@ import javax.persistence.Id;
 @Entity
 public class Student02 {
 	
-	//@Id annotation altındaki değişkenin  primary key yapar.
-		//Bu annotasyon her Entity sınıfında olmalı  
+	//@Id annotation altÄ±ndaki deÄŸiÅŸkeni  primary key yapar.
+		//Bu annotasyon her Entity sÄ±nÄ±fÄ±nda olmalÄ±  
 		@Id
 		private int id;
 		
 		
 		/*
-		 * Eğer tablodaki kolon ismini değişken isminden farklı bir isim olarak
-		 * oluşturmak istersek @Column(name="student_name") bu şekilde kullanabiliriz.
+		 * EÄŸer tablodaki kolon ismini deÄŸiÅŸken isminden farklÄ± bir isim olarak
+		 * oluÅŸturmak istersek @Column(name="student_name") bu ÅŸekilde kullanabiliriz.
 		 */
 		
 		@Column(name="student_name")
