@@ -3,6 +3,7 @@ package com.hb04.onetomany;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -27,8 +28,11 @@ public class Student04 {
 	private String name;
 
 	private int grade;
-
-	@OneToMany(mappedBy ="student")
+ 
+	//CascadeType.ALL bütün cascade tiplerine sahiptir.
+	//CascadeType.PERSIST parent persist edildiğinde ona bağlı olan tüm childlera bu işlem propagate (yayılır,uygulanır) edilir
+	//CascadeType.REMOVE parent remove edildiğinde ona bağlı olan tüm childlera bu işlem propagate (yayılır,uygulanır) edilir
+	@OneToMany(mappedBy ="student",orphanRemoval = true, cascade = CascadeType.ALL)
 	private List<Book04> bookList = new ArrayList<>();
 
 	public int getId() {

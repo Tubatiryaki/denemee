@@ -1,6 +1,7 @@
 package com.hb02.embeddable;
 
 import javax.persistence.Column;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -24,7 +25,7 @@ public class Student02 {
 		@Column
 		private int grade;
 		
-		
+		//@Embedded
 		private Course02 courses;
 
 		public int getId() {

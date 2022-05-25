@@ -62,16 +62,18 @@ public class RunnerSave04 {
 		
 		Transaction tx=session.beginTransaction();
 		
-		//session.save(student1);
-//		session.save(student2);
-//		session.save(student3);
+		session.save(student1);
+		session.save(student2);
+		session.save(student3);
 		
-		session.save(book1);
+//		session.save(book1);
+//		
+//		session.save(book2);
+//		session.save(book3);
+//		session.save(book4);
 		
-		session.save(book2);
-		session.save(book3);
-		session.save(book4);
-		
+		//OrphanRemoval=true ise aşağudaki kod sayesinde 0 indexte bulunan kitap tablodan silinir.
+		//student1.getBookList().set(0, null);
 		
 		tx.commit();
 		

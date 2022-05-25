@@ -105,8 +105,15 @@ public class RunnerFetch04 {
 //		session.delete(student1);
 	
 		//delete metodu ile verilen bir id'ye göre bir Book04 silme işlemi
-		book1 = session.get(Book04.class,104);
-		session.delete(book1);
+//		book1 = session.get(Book04.class,104);
+//		session.delete(book1);
+		
+	//
+//		book1=session.get(Book04.class, 103);
+//		session.delete(book1);
+//		
+		student1=session.get(Student04.class, 1001);
+		session.delete(student1);
 		
 		
 		tx.commit();
