@@ -46,7 +46,7 @@ public class RunnerSave01 {
 		 
 		 tx.commit();
 		
-		//Session close önemli yoksa connection açýk kalýr. 
+		//Session close Ã¶nemli yoksa connection aÃ§Ä±k kalÄ±r. 
 		session.close();
 		sf.close();
 	}

@@ -4,6 +4,9 @@
 		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
+    	<!-- @Deprecated 
+    	  Bir süre sonra tamamen çıkarılacağını gösteren annotasyon.
+    	 <property name ="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property> -->
         <property name ="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="connection.url">jdbc:mysql://localhost:3306/test_db</property>
         <property name="connection.username">root</property>
@@ -20,11 +23,17 @@
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
         
-        <!--hibernate.cfg.xml içinde mapping class ile eklenmişsea şağıdaki satıra ihtiyaç yok.
+        <!--hibernate.cfg.xml içinde mapping class ile eklenmişse şağıdaki satıra ihtiyaç yok.
 		 ikisinden biri kullanılabilir.
 		 con.addAnnotatedClass(Student03.class).addAnnotatedClass(Diary.class); 
         <mapping class="com.hb03.onetoone.Student03"/>
         <mapping class="com.hb03.onetoone.Diary"/>-->
+        
+        <!-- second level cache active:true -->
+         <property name="hibernate.cache.use_second_level_cache">true</property>
+        <!-- ilgili dependecy içinden sınıf ismini aldık kullacağımız region fatory için-->          
+		<property name="hibernate.cache.region.factory_class">org.hibernate.cache.jcache.internal.JCacheRegionFactory</property>
+        
    
     </session-factory>
 </hibernate-configuration>
