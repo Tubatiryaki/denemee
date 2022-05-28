@@ -1,12 +1,15 @@
-package com.hb011.object_life_cycle;
+package com.hb12.entitymanager;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Student11 {
+public class Student12 {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
 	private String name;
@@ -40,7 +43,7 @@ public class Student11 {
 
 	@Override
 	public String toString() {
-		return "Student11 [id=" + getId() + ", name=" + name + ", grade=" + grade + "]";
+		return "Student12 [id=" + getId() + ", name=" + name + ", grade=" + grade + "]";
 	}
 
 

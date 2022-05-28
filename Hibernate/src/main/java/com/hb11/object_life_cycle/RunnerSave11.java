@@ -1,4 +1,4 @@
-package com.hb011.object_life_cycle;
+package com.hb11.object_life_cycle;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
